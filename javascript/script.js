@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const generateQuestionsBtn = document.getElementById("generateQuestionsBtn");
   const questionsContainer = document.getElementById("questionsContainer");
 
+  
   const allQuestions = [
     {
       question: "pregunta 1",
@@ -259,6 +260,7 @@ document.addEventListener("DOMContentLoaded", function () {
       correctAnswer: "1",
     },
   ];
+
 total = 0
   generateQuestionsBtn.addEventListener("click", function () {
     questionsContainer.innerHTML = ""; // Limpia el contenido anterior
@@ -316,10 +318,10 @@ total = 0
 
     return card;
   }
-  // ... (código anterior)
+  
 
   generateQuestionsBtn.addEventListener("click", function () {
-    // ... (código anterior)
+    
 
     selectedQuestions.forEach(function (questionData, index) {
       const questionCard = createQuestionCard(questionData, index + 1);
@@ -334,18 +336,22 @@ total = 0
     resultMessage.textContent = `Respuestas correctas: ${correctAnswers.length} de 1`;
   });
 
-  // ... (código anterior)
+  
 });
 
 $(document).ready(function() {
-  $('#myModal').on('shown.bs.modal', function () {
-    // Código a ejecutar cuando el modal se muestra
+  $('#modal1').on('shown.bs.modal', function () {
+    
   });
 
 });
+var modal1 = document.getElementById('modal1');
+var boton = document.getElementById('boton');
 
 
-
-
-
-
+boton.addEventListener('click', function() {
+  
+  getRandomQuestions();
+  
+  modal1.style.display='none';
+});
