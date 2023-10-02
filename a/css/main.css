@@ -1,24 +1,135 @@
-.oooo{
-background-color:tomato;
+.container p {
+    /* ... */
+    color: #9a34df;
+    /* ... */
+  }
 
-}
-.h1{
+  label {
 
-color: white;
-}
-.p{
+    color: #e5cdf5;
+  }
 
-color: white;
+ h3 {
+   color: #ae46f3;
 
-}
+ } 
 
-.button2{
+ p {
 
-color:black;
+  color: #9a34df;  
+ }
 
-background-color:white;
+ h1 {
+  color: #904bbe;
 
-border: 2px solid black;
+ }
 
-}
+
+
+
+.container {
+    /* ... */
+    border: 2px solid #31814c;
+    /* ... */
+  }
+  
+  .container {
+    /* ... */
+    background: rgba(31, 3, 37, 0.5);
+    /* ... */
+  }
+  
+  
+  
+  
+
+
+body {
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    background: linear-gradient(#466b43, #061809);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+  .form-check {
+    margin-bottom: 5px;
+  }
+  button {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+  }
+  #resultado {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+/* style.css */
+
+/* Estilos para el contenedor principal */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+   
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+ 
+  
+  /* Estilos para las preguntas */
+  fieldset {
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  legend {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  p {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  /* Estilos para las opciones de respuesta */
+  .form-check {
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para el botón de calcular puntaje */
+  button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4ca758;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
 

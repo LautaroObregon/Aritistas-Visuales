@@ -12,29 +12,68 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="a/css/main.css" />
   
   </head>
   <body>
-    <div class="container mt-5">
-      <h1>Examen de Preguntas</h1>
-      <p>Haz clic en el botón para mostrar 10 preguntas aleatorias:</p>
-      <button class="btn btn-primary" id="generateQuestionsBtn">
-        Mostrar Preguntas
-      </button>
-      <div class="mt-3" id="questionsContainer">
-        <!-- Aquí se mostrarán las preguntas -->
+    <div class="container">
+      <h1>Trivia</h1>
+  
+      <div id="preguntas">
+        <div>
+          <h3>Pregunta 1:</h3>
+          <p>¿Cuál es la capital de Francia?</p>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" name="respuesta0" value="10">
+            <label class="form-check-label">París</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" name="respuesta0" value="0">
+            <label class="form-check-label">Londres</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" name="respuesta0" value="0">
+            <label class="form-check-label">Madrid</label>
+          </div>
+        </div>
+  
+        <div>
+          <h3>Pregunta 2:</h3>
+          <p>¿Cuál es el océano más grande?</p>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" name="respuesta1" value="10">
+            <label class="form-check-label">Pacífico</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" name="respuesta1" value="0">
+            <label class="form-check-label">Atlántico</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" name="respuesta1" value="0">
+            <label class="form-check-label">Índico</label>
+          </div>
+        </div>
+  
+        <div>
+          <h3>Pregunta 3:</h3>
+          <p>¿Cuál es la montaña más alta del mundo?</p>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" name="respuesta2" value="10">
+            <label class="form-check-label">Monte Everest</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" name="respuesta2" value="0">
+            <label class="form-check-label">K2</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" name="respuesta2" value="0">
+            <label class="form-check-label">Kangchenjunga</label>
+          </div>
+        </div>
       </div>
-      <div class="mt-3" id="submitContainer">
-        <button class="btn btn-success" id="submitAnswersBtn" disabled>
-          Enviar Respuestas
-        </button>
-        <p class="mt-2" id="resultMessage"></p>
-      </div>
-    </div>
-
-    <button type="button"  class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
-      
+  
+    <button type="button"  class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    enviar respuesta  
     </button>
     
     <div class="modal" id="myModal">
